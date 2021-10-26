@@ -2,7 +2,7 @@ local function TagAll(msg)
 local text = msg.content_.text_
 if ChatType == 'sp' or ChatType == 'gp'  then
 if Manager(msg) then
-if text == "all" or text == "@all" then
+if text == "all" or text == "@all" or text == "تعالو يونس يريدكم" then
 if DevAbs:get(Matrix.."Abs:TagAll:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙اسف تاج راسي يونس بس شويه انتضر حتى ميعلك السيرفر', 1, 'md')
 return false  
