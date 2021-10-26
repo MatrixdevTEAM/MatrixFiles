@@ -7,7 +7,7 @@ if DevAbs:get(Matrix.."Abs:TagAll:Time"..msg.chat_id_..':'..msg.sender_user_id_)
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙اسف تاج راسي يونس بس شويه انتضر حتى ميعلك السيرفر', 1, 'md')
 return false  
 end
-DevAbs:setex(Matrix..'Abs:TagAll:Time'..msg.chat_id_..':'..msg.sender_user_id_,10,true)
+DevAbs:setex(Matrix..'Abs:TagAll:Time'..msg.chat_id_..':'..msg.sender_user_id_,120,true)
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub('-100','')},function(arg,data) 
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = data.member_count_},function(arg,dp)
 x = 0
